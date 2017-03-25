@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>Just ToDo List</h1>
+    </div>
+    <section class="todoapp">
+        <header class="header">
+            <input id="newTodo" placeholder="Что нужно сделать?" autofocus>
+        </header>
+        <section id="todoMain">
+            <input type="checkbox" id="toggleAll" class="toggle-all">
+            <ul id="todoList" class="todo-list"></ul>
+        </section>
+        <footer id="footer">
+            <span id="todo-count"></span>
+            <ul class="filters">
+                <li>
+                    <button class="selected" id="filterAll">Все</button>
+                </li>
+                <li>
+                    <button id="filterActive">Активные</button>
+                </li>
+                <li>
+                    <button id="filterCompleted">Завершённые</button>
+                </li>
+            </ul>
+            <button class="clear-completed" id="clearCompleted">Удалить выполненные</button>
+        </footer>
+    </section>
+    <script src="js/helpview.js"></script>
+    <script src="js/actions.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/test.js"></script>
+</body>
+
+</html>
